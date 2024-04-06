@@ -8,39 +8,113 @@
     </head>
     <body>
         <script src="javascript.js" defer></script>
-
-        <table class="tab">
-
-            <caption>
-                <em>LIBRARY CARD</em>
-            </caption>
-
-            <colgroup>
-                <col  span="2"/>
-                <col style="border: 2px solid black;" />
-            </colgroup>
-
-            <tr>
-                <!--<th scope="col">S/No</th> -->
-                <th scope="col">Title</th>
-                <th scope="col">Author(s)</th>
-                <th scope="col">Pages</th>
-                <th scope="col">Status (Read)</th>
-                <th scope="col"></th>
-            </tr>
-
-            <tr>
-                <!--<td>1</td> -->
-                <td>Just in Time</td>
-                <td>S.R lop</td>
-                <td>150</td>
-                <td>Yes</td>
-                <td>remove</td>
-                
-            </tr>
+        <div class="container">
 
 
-        </table>
+            <div class="TaBle">
+                <table class="tab">
+
+                    <caption>
+                        <em>LIBRARY CARD</em>
+                    </caption>
+
+                    <colgroup>
+                        <col  span="2"/>
+                        <col style="border: 2px solid black;" />
+                    </colgroup>
+
+                    <tr>
+                        <!--<th scope="col">S/No</th> -->
+                        <th scope="col">Title</th>
+                        <th scope="col">Author(s)</th>
+                        <th scope="col">Pages</th>
+                        <th scope="col">Status (Read)</th>
+                        <th scope="col"></th>
+                    </tr>
+
+                    <tr>
+                        <!--<td>1</td> -->
+                        <td>Just in Time</td>
+                        <td>S.R lop</td>
+                        <td>150</td>
+                        <td>Yes</td>
+                        <td>remove</td>
+                        
+                    </tr>
+
+
+                </table>
+
+            </div>
+
+            <p></p>
+
+            <div class="foRm">
+                <form action="" method="get">
+
+                    <fieldset>
+
+                        <!--<legend>CONTACT</legend> -->
         
+                        <p style="font-weight: bold; text-align: center;"><em>BOOK DETAILS</em>
+                        </p>
+        
+                        <div class="Title">
+                            <label for="title">Title:  </label>
+                            <input type="text" id="title" name = "Title" placeholder="e.g The Hobbit .." required>
+                        </div>
+        
+                        <p></p>
+        
+                        <div class="Author">
+                            <label for="author">Author(s):</label>
+                            <input type="text" id="author" name = "Author" placeholder="e.g J.R.R. Tolkien" required>
+                        </div>
+        
+                        <p></p>
+        
+                        <div class="numPages">
+                            <label for="numPa">Pages:</label>
+                            <input type="text" id="numPa" name="Number of Pages"></input>
+                        </div>
+
+                        <p></p>
+
+                        <div class="Status">
+                            <div>
+                                <div>Book Read?</div>
+                                <label for="yes">Yes:</label>
+                                <input type="radio" id="yes" name="read_stat" value="yes">
+                                <!--<label for="yes">Yes</label>-->
+                            </div>
+                            <div>
+                                <label for="no">No:</label>
+                                <input type="radio" id="no" name="read_stat" value="no">
+                                <!--<label for="no">No</label>-->
+                            </div>
+                            <!--<div class="Status">
+                            <select name="stat">
+                                <option value="yes">Yes</option>
+                                <option value="no" >No</option>
+                            </select>
+                            </div> -->
+                        </div>
+        
+                        <p></p>
+        
+                        <div class="buttns">
+                            <button type="submit">Add to Card</button>
+                        </div>
+        
+                    </fieldset>
+        
+
+                </form>
+
+            </div>
+
+
+        </div>
+
     </body>
 </html>

@@ -4,6 +4,13 @@
 html {
     font-family: sans-serif;
 }
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
   
 table {
     border-collapse: collapse;
@@ -39,4 +46,52 @@ caption {
 
 p {
     height: 10px;
+}
+
+
+
+
+form {
+    display: inline-block;
+    /* Form outline */
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+}
+  
+
+
+label {
+    /* Uniform size & alignment */
+    display: inline-block;
+    min-width: 90px;
+    text-align: right;
+}
+
+input,
+select {
+  /* To make sure that all text fields have the same font settings
+     By default, textareas have a monospace font */
+  font: 1em sans-serif;
+  /* Uniform text field size */
+  width: 300px;
+  box-sizing: border-box;
+  /* Match form field borders */
+  border: 1px solid #999;
+}
+
+input:focus {
+  /* Additional highlight for focused elements, when in that region*/
+  border-color: #000;
+}
+
+.buttns {
+    /* Align buttons with the text fields */
+    padding-right: 50px; /* same size as the label elements */
+}
+
+button {
+    /* This extra margin represent roughly the same space as the space
+       between the labels and their text fields */
+    margin-left: 0.5em;
 }

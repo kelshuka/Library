@@ -41,17 +41,11 @@ function appendToCard(arry) {
 
 const theHobbit = addBookToLibrary('The Hobbit', 'J.R.R. Tolkien', 295, 'nO');
 
-console.log(theHobbit);
 console.log(myLibrary);
 
 const theWoman = addBookToLibrary('The Woman', 'Sr. Sarah', 300, 'yes');
 const Brain = addBookToLibrary('Brain', 'P.H Jas', 100, 'yes');
 
-
-
-console.log(myLibrary[1]);
-console.log(Object.keys(myLibrary[1]));
-
 let fer = appendToCard(myLibrary);
-console.log(fer);
+//console.log(fer);
 
