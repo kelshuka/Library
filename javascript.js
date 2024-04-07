@@ -39,13 +39,61 @@ function appendToCard(arry) {
     }
 }
 
-const theHobbit = addBookToLibrary('The Hobbit', 'J.R.R. Tolkien', 295, 'nO');
+
+//const theHobbit = addBookToLibrary('The Hobbit', 'J.R.R. Tolkien', 295, 'nO');
 
 console.log(myLibrary);
 
-const theWoman = addBookToLibrary('The Woman', 'Sr. Sarah', 300, 'yes');
-const Brain = addBookToLibrary('Brain', 'P.H Jas', 100, 'yes');
+//const theWoman = addBookToLibrary('The Woman', 'Sr. Sarah', 300, 'yes');
+//const Brain = addBookToLibrary('Brain', 'P.H Jas', 100, 'yes');
 
 let fer = appendToCard(myLibrary);
+
+const myForm = document.querySelector('#myForm');
+const butN = document.querySelector('button');
+
+myForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+    const titl = document.querySelector("#title").value;
+    const auth = document.querySelector("#author").value;
+    const nuM = document.querySelector("#numPa").value;
+    const yS = document.querySelector("#yes").checked;
+
+    let yN = '';
+    if (yS == true) yN = 'read';
+    else yN= 'unread';
+    //const noS = document.querySelector("#no").value;
+
+    let fer2 = addBookToLibrary(titl, auth, nuM, yN);
+    console.log(fer2);
+    appendToCard(fer2);
+    myLibrary = myLibrary.splice(0, myLibrary.length);
+    
+});
+
+function changeStat() {
+    let toggle_read = document.createElement('button')
+        toggle_read.className = "toggle_read"
+        const yS = document.querySelector("#yes").checked;
+        if (yS){
+            toggle_read.textContent = "unread"
+        }
+        else{
+            toggle_read.textContent = "read"
+        }
+        toggle_read.addEventListener("click", ()=>{
+            if (yS){
+                yS= false
+            }
+            else {
+                yS = true
+            }
+        })
+        //book_div.append(toggle_read)
+        //shielf.append(book_div)
+    
+}
+
+//let fer1 = appendToCard(myLibrary);
 //console.log(fer);
 
