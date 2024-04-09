@@ -23,29 +23,26 @@
                         <col style="border: 2px solid black;" />
                     </colgroup>
 
-                    <tr>
-                        <!--<th scope="col">S/No</th> -->
-                        <th scope="col">Title</th>
-                        <th scope="col">Author(s)</th>
-                        <th scope="col">Pages</th>
-                        <th scope="col">Status (Read)</th>
-                        <th scope="col"></th>
-                    </tr>
+                    <thead>
+                        <tr>
+                            <!--<th scope="col">S/No</th> -->
+                            <th scope="col">Title</th>
+                            <th scope="col">Author(s)</th>
+                            <th scope="col">Pages</th>
+                            <th scope="col">Status (Read)</th>
+                        </tr>
+                    </thead>
 
-                    <tr>
-                        <!--<td>1</td> -->
-                        <td>Just in Time</td>
-                        <td>S.R lop</td>
-                        <td>150</td>
-                        <td>read</td>
-                        <td>remove</td>
+                    <tbody>
                         
-                    </tr>
+                    </tbody>
 
 
                 </table>
 
             </div>
+
+            <div id="books" ></div>
 
             <p></p>
 
@@ -81,24 +78,6 @@
                         <p></p>
 
                         <div class="Status">
-                            <!--
-                            <div>
-                                <div>Book Read?</div>
-                                <label for="yes">Yes:</label>
-                                <input type="radio" id="yes" name="read_stat" value="yes">
-                                
-                            </div>
-                            <div>
-                                <label for="no">No:</label>
-                                <input type="radio" id="no" name="read_stat" value="no">
-                                
-                            </div>
-                            <div class="Status">
-                            <select name="stat">
-                                <option value="yes">Yes</option>
-                                <option value="no" >No</option>
-                            </select>
-                            </div> -->
                             <label for="yes">Read?</label>
                             <input type="checkbox" id="yes" name="read_stat" value="">
 
@@ -106,14 +85,20 @@
         
                         <p></p>
         
-                        <div class="buttns">
+                        <div class="buttns"> 
+
+                            
+
                             <button type="submit">Add to Card</button>
+                            <p></p>
+                            <input type="button" id="clr" value="clear form">
                         </div>
         
                     </fieldset>
         
 
                 </form>
+                
 
             </div>
 
