@@ -62,7 +62,7 @@ myForm.addEventListener("submit", function (event) {
     const titl = document.querySelector("#title").value;
     const auth = document.querySelector("#author").value;
     const nuM = document.querySelector("#numPa").value;
-    const yS = document.querySelector("#yes").checked;
+    //const yS = document.querySelector("#yes").checked;
 
    
     let fer2 = addBookToLibrary(titl, auth, nuM);
@@ -87,7 +87,7 @@ const books = document.getElementById('books');
 
 const bookDiv = document.createElement("div");
 const deleteBtn = document.createElement("button");
-deleteBtn.textContent = "delete book?"; 
+deleteBtn.textContent = "delete a book?"; 
 bookDiv.append(deleteBtn);
 books.append(bookDiv);
 deleteBtn.addEventListener('click', () => {

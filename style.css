@@ -3,14 +3,67 @@
 
 html {
     font-family: sans-serif;
+    height: 100%;
+    width: 100%;
+    background-color: #ffb5b5 ;
+}
+
+
+
+body {
+    height: 90%;
+    width: 100%;
+    margin-bottom: 80px;
+    /*background-repeat: no-repeat;
+    background-position: cover;*/
+    background-size: 100% 180%;
+    font-size: bold;
+    flex-shrink: 0;
 }
 
 .container {
-    display: flex;
+    /*display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
+    
+     width: 130vh;*/
+    
+    display: grid;
+    resize: both;
+    overflow: auto;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 0.5fr 3fr;
+    column-gap: 20%;
 }
+
+.header {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    height: 10vh;
+}
+
+
+.TaBle {
+    background-color: #79c2d0 ;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 1fr ;
+    margin-top: 10%;
+    margin-left: 200px;
+    border-radius: 1rem;
+}
+
+.foRm {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    padding-left: 20px;
+    padding-top: 2px ;
+    margin-top: 10%;
+}
+
   
 table {
     border-collapse: collapse;
@@ -57,6 +110,7 @@ form {
     padding: 1em;
     border: 1px solid #ccc;
     border-radius: 1em;
+    background-color: #79c2d0;
 }
   
 
@@ -94,4 +148,14 @@ button {
     /* This extra margin represent roughly the same space as the space
        between the labels and their text fields */
     margin-left: 0.5em;
+    border-radius: 0.5rem;
+    background-color: #27296d;
+    color: white;
 }
+
+a {
+    /* this removes the line under our links */
+    text-decoration: none;
+    color: white;
+}
+  

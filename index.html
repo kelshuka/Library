@@ -6,9 +6,13 @@
         <title>Library App</title>
         <link rel="stylesheet" href="style.css">
     </head>
-    <body>
+    <body background="lib2.jpg">
         <script src="javascript.js" defer></script>
         <div class="container">
+
+            <div class="header" 
+            style="font-weight: bolder;font-size: 25px; color: white; background-color:#5dacbd ;text-align: center;padding-top: 30px; opacity: 0.98 ;">
+                <em>LIBRARY </em></div>
 
 
             <div class="TaBle">
@@ -20,7 +24,7 @@
 
                     <colgroup>
                         <col  span="2"/>
-                        <col style="border: 2px solid black;" />
+                       <!-- <col style="border: 2px solid black;" /> -->
                     </colgroup>
 
                     <thead>
@@ -39,10 +43,14 @@
 
 
                 </table>
+                <p></p>
+
+                <div id="books"></div>
+                <p></p>
 
             </div>
 
-            <div id="books" ></div>
+            
 
             <p></p>
 
@@ -72,11 +80,12 @@
         
                         <div class="numPages">
                             <label for="numPa">Pages:</label>
-                            <input type="text" id="numPa" name="Number of Pages"></input>
+                            <input type="number" id="numPa" name="Number of Pages"></input>
                         </div>
 
                         <p></p>
 
+                        <!--
                         <div class="Status">
                             <label for="yes">Read?</label>
                             <input type="checkbox" id="yes" name="read_stat" value="">
@@ -84,6 +93,7 @@
                         </div>
         
                         <p></p>
+                        -->
         
                         <div class="buttns"> 
 
@@ -91,7 +101,7 @@
 
                             <button type="submit">Add to Card</button>
                             <p></p>
-                            <input type="button" id="clr" value="clear form">
+                            <input type="button" id="clr" value="clear form" style="background-color: #27296d; width: 100px; height: 30px; color: white;">
                         </div>
         
                     </fieldset>
@@ -104,6 +114,9 @@
 
 
         </div>
+        <div class="footer" style="color: white;">Photo by <a href="https://www.google.com/imgres?q=library%20images&imgurl=https%3A%2F%2Fstudy.com%2Fcimages%2Fvideopreview%2Fvideopreview-full%2Fmydqweqz5e.jpg&imgrefurl=https%3A%2F%2Fstudy.com%2Facademy%2Flesson%2Flibrary-space-planning.html&docid=1ip7YfW4RTEcwM&tbnid=JslLGHgT1-_DLM&vet=12ahUKEwjZ4vbc9reFAxXJdqQEHbj0AEYQM3oECFEQAA..i&w=715&h=402&hcb=2&ved=2ahUKEwjZ4vbc9reFAxXJdqQEHbj0AEYQM3oECFEQAA"
+            target="_blank" rel="noopener noreferrer">
+            Library Space study.com</a></div>
 
     </body>
 </html>
